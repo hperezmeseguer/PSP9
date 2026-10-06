@@ -12,7 +12,7 @@ public class Descarga extends Thread {
 
     private int tiempoAleatorio(){
         
-        return (int) (Math.random() * 400) + 101;
+        return (int) (Math.random() * 401) + 100;
     }
 
     @Override 
