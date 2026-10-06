@@ -19,6 +19,17 @@ public class GestorDescargas {
         descarga3.start();
         descarga4.start();
 
+        try{
+            
+            descarga1.join();
+            descarga2.join();
+            descarga3.join();
+            descarga4.join();
+
+        } catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
         long fin = System.currentTimeMillis();
 
         long tiempoReal = fin - inicio;
