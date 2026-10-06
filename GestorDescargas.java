@@ -20,7 +20,7 @@ public class GestorDescargas {
         descarga4.start();
 
         try{
-            
+
             descarga1.join();
             descarga2.join();
             descarga3.join();
@@ -33,6 +33,11 @@ public class GestorDescargas {
         long fin = System.currentTimeMillis();
 
         long tiempoReal = fin - inicio;
+
+        long tiempoAcumulado = descarga1.getTiempoTotal() +
+                               descarga2.getTiempoTotal() +
+                               descarga3.getTiempoTotal() +
+                               descarga4.getTiempoTotal();
 
     }
 }
