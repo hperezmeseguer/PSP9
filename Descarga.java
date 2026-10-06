@@ -2,6 +2,7 @@ public class Descarga extends Thread {
 
     private String nombreArchivo;
     private int tiempoBloques;
+    private long tiempoTotal;
 
     public Descarga(String nombreArchivo){
         
@@ -18,6 +19,8 @@ public class Descarga extends Thread {
 
     public void run(){
 
+        long inicio = System.currentTimeMillis();
+
         for (int i = 1; i <= 10; i++){
             
             try {
@@ -28,5 +31,15 @@ public class Descarga extends Thread {
 
             System.out.println("[" + nombreArchivo + "] " + (i * 10) + "%");
         }
+
+        long fin = System.currentTimeMillis();
+        tiempoTotal = fin - inicio;
+
+        System.out.println("[" + nombreArchivo + "] completada en " + tiempoTotal + "ms");
+
+    }
+
+    public long getTiempoTotal(){
+        return tiempoTotal;
     }
 }
