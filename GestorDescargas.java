@@ -39,5 +39,9 @@ public class GestorDescargas {
                                descarga3.getTiempoTotal() +
                                descarga4.getTiempoTotal();
 
+        System.out.println("Todas las descargas han terminado");
+        System.out.println("Tiempo real: " + tiempoReal + "ms");
+        System.out.println("Tiempo si se descargaran una detrás de otra: " + tiempoAcumulado + "ms");
+
     }
 }
