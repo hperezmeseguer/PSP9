@@ -6,4 +6,11 @@ public class GestorDescargas {
         Descarga descarga2 = new Descarga("meditacion.mp4");
         Descarga descarga3 = new Descarga("mantras.mp3");
         Descarga descarga4 = new Descarga("horoscopo.pdf");
+
+        descarga1.setName("Descarga-cuarzos.png");
+        descarga2.setName("Descarga-cuarzos.mp4");
+        descarga3.setName("Descarga-cuarzos.mp3");
+        descarga4.setName("Descarga-cuarzos.pdf");
+
+    }
 }
