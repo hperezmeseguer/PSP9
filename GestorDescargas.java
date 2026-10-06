@@ -14,6 +14,11 @@ public class GestorDescargas {
 
         long inicio = System.currentTimeMillis();
 
+        descarga1.start();
+        descarga2.start();
+        descarga3.start();
+        descarga4.start();
+
         long fin = System.currentTimeMillis();
 
         long tiempoReal = fin - inicio;
