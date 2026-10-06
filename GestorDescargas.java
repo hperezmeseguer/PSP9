@@ -12,5 +12,11 @@ public class GestorDescargas {
         descarga3.setName("Descarga-mantras.mp3");
         descarga4.setName("Descarga-horoscopo.pdf");
 
+        long inicio = System.currentTimeMillis();
+
+        long fin = System.currentTimeMillis();
+
+        long tiempoReal = fin - inicio;
+
     }
 }
