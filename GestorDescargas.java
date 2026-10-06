@@ -8,9 +8,9 @@ public class GestorDescargas {
         Descarga descarga4 = new Descarga("horoscopo.pdf");
 
         descarga1.setName("Descarga-cuarzos.png");
-        descarga2.setName("Descarga-cuarzos.mp4");
-        descarga3.setName("Descarga-cuarzos.mp3");
-        descarga4.setName("Descarga-cuarzos.pdf");
+        descarga2.setName("Descarga-meditacion.mp4");
+        descarga3.setName("Descarga-mantras.mp3");
+        descarga4.setName("Descarga-horoscopo.pdf");
 
     }
 }
